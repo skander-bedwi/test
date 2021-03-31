@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}  {% trans %} Log in! {%  endtrans %} {% endblock %}
+
+{% block body %}
+
+<div class="d-md-flex half"> 
+<div class="bg" style="background-image: url('stylelogin/images/bg_1.jpg');"></div>
+<div class="contents">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-md-12">
+<div class="form-block mx-auto">
+<div class="text-center mb-5">
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+
+    <h1 class="h3 mb-3 font-weight-normal"> {% trans %} Please sign in {% endtrans %}  </h1>
+    
+    <label style=" margin-right:240px" for="inputUsername"> {% trans %} Username {% endtrans %} </label>
+<input type="text" value="{{ last_username }}" name="username" id="inputUsername"  placeholder="  {% trans %} your-email@gmail.com {% endtrans %} " class="form-control" required autofocus>
+    <label style="margin-right:240px; margin-top:5px" for="inputPassword"> {% trans %}Password {% endtrans %}</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" required>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+   
+
+   </br>
+
+   <div class="d-sm-flex mb-5 align-items-center">
+<label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">  {% trans %}Remember me {% endtrans %}</span>
+<input type="checkbox" checked="checked" />
+<div class="control__indicator"></div>
+</label>
+<span class="ml-auto"><a href="#" class="forgot-pass"> {% trans %}  Forgot Password {% endtrans %} </a></span>
+</div>
+
+   <input type="submit" value=" {% trans %} Log In {% endtrans %} " class="btn btn-block btn-primary">
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

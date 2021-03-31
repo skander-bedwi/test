@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="VH0F5Aa" resname="Veuillez vous connecter">
+        <source>Please sign in </source>
+        <target>Veuillez vous connecter</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>Nom d'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="_TJnqhH" resname="Remember me">
+        <source>Remember me</source>
+        <target>Souviens-toi de moi</target>
+      </trans-unit>
+      <trans-unit id=".f1B3nr" resname="Forgot Password">
+        <source>Forgot Password</source>
+        <target>Mot de passe oublié</target>
+      </trans-unit>
+      <trans-unit id="TdHGKX7" resname="your-email@gmail.com">
+        <source>your-email@gmail.com</source>
+        <target>votre-email@gmail.com</target>
+      </trans-unit>
+      <trans-unit id="ZXcGGty" resname="Log In ">
+        <source>Log In </source>
+        <target>connexion</target>
+      </trans-unit>
+      
+      
+      <trans-unit id="Le1KPuZ" resname="Log In">
+        <source>Log In</source>
+        <target>connexion</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
